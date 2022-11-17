@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initialscale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey_form.css">
+    </head>
+    <body>      
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name<input type="text" id="name" placeholder="Enter your Name" required /></label>
+          <label id="email-label">Email<input type="email" id="email" placeholder="Enter your Email" required /></label>
+          <label id="number-label">Age (optional)<input type="number" id="number" placeholder="Age" min="10" max="99" required /></label>
+        </fieldset>
+        <fieldset>
+          <p for="dropdown">Which option best describes your current role?</p>
+            <select id="dropdown" required>
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time Job</option>
+                <option value="3">Full time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+                </select>
+              </fieldset>
+        <fieldset>
+          <p for="recommendation">Would you recommend freeCodeCamp to a friend?
+            <br>
+            <label><input class="inline" value="definetly" type="radio" name="recommendation" checked/>Definetly</label>
+            
+            <label><input class="inline" value="maybe" type="radio" name="recommendation"/>Maybe</label>
+            
+            <label><input class="inline" value="not sure" type="radio" name="recommendation"/>Not sure</label>
+          </fieldset>
+        <fieldset>
+          <p for="referrer">What is your favorite feature of freeCodeCamp?</p>
+              <select value="referrer">
+                  <option value="">Select an option</option>
+                  <option value="1">Challenges</option>
+                  <option value="2">Projects</option>
+                  <option value="3">Community</option>
+                  <option value="4">Open Source</option>
+                  </select>
+            </fieldset>
+        <fieldset>
+          <p for="checkbox">What would you like to see improved? (Check all that apply)</p>
+              <label><input class="inline" type="checkbox" value="Front-end Projects" required />Front-end Projects</label>
+              <br>
+              
+              <label><input class="inline" type="checkbox" value="Back-end Projects" required />Back-end Projects</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="Visualization" required />Data Visualization</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="Challenges" required />Challenges</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="opne source community" required />Open Source Community</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="gitter help rooms" required />Gitter help rooms</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="videos" required />Videos</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="city meetsups" required />City Meetups</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="wiki" required />Wiki</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="forum" required />Forum</label>
+              <br>
+              <label><input class="inline" type="checkbox" value="additional courses" required />Additional Courses</label>
+              </fieldset>
+        <fieldset>
+          <p>Any comments or suggestions?</p>
+              <textarea name="suggestions" rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+          </fieldset>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+  </html>
